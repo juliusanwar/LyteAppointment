@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Clinic ABC Appointment Scheduling</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="header">
+        <h1>Clinic ABC Appointment Scheduling</a></h1>
+    </div>
+
+    <nav>
+        <a href="./">Patient</a>
+        |
+        <a href="./Doctor">Doctor</a>
+        |
+        <a href="./Manager">Manager</a>
+    </nav>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
